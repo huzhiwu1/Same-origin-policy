@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<iframe
+			src="http://localhost:3000/a.html"
+			frameborder="0"
+			id="aIframe"
+			onload="load()"
+		></iframe>
+		<script>
+			function load() {
+				let frame = document.getElementById('aIframe');
+				//向a页面发送信息
+				frame.contentWindow.postMessage(
+					'你好，我是b页面',
+					'http://localhost:3000/a.html'
+				);
+			}
+			window.onmessage = function (e) {
+				console.log(e.data);
+			};
+		</script>
+	</body>
+</html>
