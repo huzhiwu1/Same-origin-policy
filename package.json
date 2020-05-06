@@ -1,0 +1,23 @@
+{
+  "name": "Same-origin-policy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzhiwu1/Same-origin-policy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huzhiwu1/Same-origin-policy/issues"
+  },
+  "homepage": "https://github.com/huzhiwu1/Same-origin-policy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
