@@ -40,6 +40,13 @@
 				},
 				cb: 'xxx',
 			}).then(res => console.log(res));
+			jsonp({
+				url: 'http://localhost:3000/say',
+				params: {
+					wd: 'say',
+				},
+				cb: 'xx',
+			}).then(res => console.log(res));
 		</script>
 	</body>
 </html>
